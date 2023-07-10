@@ -3,7 +3,9 @@ import CardList from "../../components/card-list";
 
 function Home() {
     return (
-       <CardList/>
+        <main>
+            <CardList />
+        </main>
     )
 }
 
