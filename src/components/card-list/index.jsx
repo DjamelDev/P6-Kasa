@@ -4,8 +4,7 @@ import Card from '../card';
 
 function CardList() {
     return (
-        datas.map((card, index) => {
-            
+        datas.map((card, index) => { 
              return <Card key={index} card={card}></Card>
         })
     )
