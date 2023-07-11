@@ -1,12 +1,9 @@
-import React, { Fragment } from "react";
+import arrow from '../../assets/images/arrow.png'
+import { useState } from "react"
+import styles from './style.module.scss'
 
-function Collapse({about}) {
-    return (
-        <Fragment>
-        <div> {about.title}</div> 
-        <div> {about.description}</div> 
-       </Fragment>
-    )
+function Collapse () {
+    return null;
 }
 
-export default Collapse;
+export default Collapse

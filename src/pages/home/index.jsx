@@ -1,9 +1,11 @@
 import React from "react";
+import Banner from '../../components/banner';
 import CardList from "../../components/card-list";
 
 function Home() {
     return (
         <main>
+            <Banner page="home"/>
             <CardList />
         </main>
     )
