@@ -2,9 +2,9 @@ $color_1: rgba(255, 255, 255, 1);
 $color_2: rgba(255, 96, 96, 1);
 $background-color_1: rgba(255, 96, 96, 1);
 
-// section.collapse {
-//     margin: 5%;
-// }
+section {
+    margin: 0 10%;
+}
 
 .collapse_title_closed {
 	background-color: $background-color_1;
@@ -64,10 +64,12 @@ $background-color_1: rgba(255, 96, 96, 1);
 .arrow_up {
 	transition: transform 0.3s;
 }
+
 .arrow_down {
 	transform: rotate(180deg);
 	transition: transform 0.3s;
 }
+
 @media (max-width :768px) {
 	.collapse_description {
 		padding-top: 20px;
