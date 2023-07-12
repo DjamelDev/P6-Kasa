@@ -5,10 +5,12 @@ import Home from "../../pages/home";
 import FicheLogement from "../../pages/fiche-logement";
 import Error from "../../pages/error";
 import About from "../../pages/a-propos";
+import './style.scss';
 
 function Router() {
     return (
-        <BrowserRouter>
+        <div className="page">
+            <BrowserRouter>
             <Header></Header>
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -18,7 +20,8 @@ function Router() {
 
             </Routes>
            <Footer></Footer>
-        </BrowserRouter>
+            </BrowserRouter>
+        </div>
     )
 }
 
