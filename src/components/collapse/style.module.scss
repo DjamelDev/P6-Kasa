@@ -1,13 +1,8 @@
 $color_1: rgba(255, 255, 255, 1);
 $color_2: rgba(255, 96, 96, 1);
-$background-color_1: rgba(255, 96, 96, 1);
-
-section {
-    margin: 0 10%;
-}
 
 .collapse_title_closed {
-	background-color: $background-color_1;
+	background-color: $color_2;
 	color: $color_1;
 	position: relative;
 	display: flex;
@@ -22,12 +17,13 @@ section {
 	z-index: 1;
 	&:hover {
 		cursor: pointer;
-		box-shadow: 2px 3px 10px rgba(200, 96, 96, 1);
+		box-shadow: 2px 3px 10px $color_2;
 		transition: 0.3s;
 	}
 }
+
 .collapse_title_open {
-	background-color: $background-color_1;
+	background-color: $color_2;
 	color: $color_1;
 	height: 30px;
 	font-size: 18px;
@@ -43,12 +39,13 @@ section {
 	border-radius: 5px 5px;
 	&:hover {
 		cursor: pointer;
-		box-shadow: 2px 3px 10px rgba(200, 96, 96, 1);
+		box-shadow: 2px 3px 10px $color_2;
 		transition: 0.3s;
 	}
 }
+
 .collapse_description {
-	background: rgba(246, 246, 246, 1);
+	background: $color_1;
 	color: $color_2;
 	font-size: 1.3rem;
 	font-weight: 400;
@@ -61,6 +58,7 @@ section {
 	position: relative;
 	top: -4px;
 }
+
 .arrow_up {
 	transition: transform 0.3s;
 }
