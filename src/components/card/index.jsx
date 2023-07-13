@@ -1,8 +1,6 @@
 // Librairies
 import React from "react";
 import './style.scss';
-
-// Components
 import { Link } from 'react-router-dom';
 
 function Card(props) {
