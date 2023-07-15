@@ -1,4 +1,3 @@
-import React from "react";
 import datas from '../../assets/data/logements.json';
 import Card from '../card';
 import './style.scss';

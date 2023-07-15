@@ -1,10 +1,10 @@
 $color_1: white;
 $breakpoint-tablet: 768px;
 
-.experience {
+.card {
 	display: flex;
-	background: linear-gradient(180deg, hsla(0, 0%, 100%, 0%) 50%, rgba(0, 0, 0, .5));
     align-items: flex-end;
+	background: linear-gradient(180deg, hsla(0, 0%, 100%, 0%) 50%, rgba(0, 0, 0, .5));
 	height: 300px;
     position: relative;
 	border-radius: 10px;
@@ -27,7 +27,7 @@ $breakpoint-tablet: 768px;
 }
 
 @media (max-width: 768px) {
-    .experience {
+    .card {
         height: 225px;
     }
 }
