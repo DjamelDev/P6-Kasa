@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import arrowPrev from '../../assets/images/arrow-prev.png';
 import arrowNext from '../../assets/images/arrow-next.png';
-import styles from './style.scss';
+import styles from './style.module.scss';
 
 // Définition du composant "Slideshow" avec les propriétés "pictures" (tableau d'images) et "picturesLength" (nombre total d'images)
 function Slideshow({ pictures, picturesLength }) {
