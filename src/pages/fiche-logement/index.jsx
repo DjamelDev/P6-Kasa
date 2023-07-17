@@ -7,6 +7,7 @@ import Error from "../error";
 import Tags from "../../components/tag-name";
 import Slideshow from "../../components/slideshow";
 import Rating from "../../components/rating";
+import './style.scss';
 
 
 // Cette function va permettre d'afficher les informations sur un logement spécifique.
@@ -18,7 +19,9 @@ function FicheLogement() {
         logement ?
         // Si un logement correspondant est trouvé, les éléments affichent l'identifiant (logement.id) et le titre (logement.title).
         <main>
-        <Slideshow pictures={logement.pictures} picturesLength={logement.pictures.length} />
+        <div className="apartment-img">
+            <Slideshow pictures={logement.pictures} picturesLength={logement.pictures.length} />
+        </div>
         <article className='apartment-details'>
             <div className='details-left'>
                 <h2 className='apartment-title'>{logement.title}</h2>

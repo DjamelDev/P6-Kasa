@@ -7,19 +7,20 @@ import Error from "../../pages/error";
 import About from "../../pages/a-propos";
 import './style.scss';
 
+// Définition du composant "Router"
 function Router() {
     return (
         <div className="page">
             <BrowserRouter>
-            <Header></Header>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/fiche-logement/:id" element={<FicheLogement />} />
-                <Route path="/a-propos" element={<About />} />
-                <Route path='*' element={<Error />} />
+            <Header></Header> {/* Affichage du composant Header en haut de la page */}
+            <Routes> {/* Composant utilisé pour définir un groupe de routes */}
+                <Route path="/" element={<Home />} />{/* Le premier (Route path="/") est associé au composant Accueil et correspond à l'URL racine. */}
+                <Route path="/fiche-logement/:id" element={<FicheLogement />} />{/* Route associé au composant FicheLogement et permet d'utiliser des URLs dynamiques où id peut être passé en tant que paramètre au composant */}
+                <Route path="/a-propos" element={<About />} />{/* Route pour la page "À propos" */}
+                <Route path='*' element={<Error />} />{/* Route  associé au composant Erreur et sert de route de secours pour toutes les autres URLs inconnues */}
 
             </Routes>
-           <Footer></Footer>
+           <Footer></Footer>{/* Affichage du composant Footer en bas de la page et apparaît sur chaque page */}
             </BrowserRouter>
         </div>
     )
