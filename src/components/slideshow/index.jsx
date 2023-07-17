@@ -51,6 +51,7 @@ function Slideshow({ pictures, picturesLength }) {
                         <img
                             src={arrowPrev}
                             alt='Flèche gauche'
+                            className='arrow-left'
                         />
                     </button>
                     {/* Bouton pour afficher l'image suivante lorsqu'il est cliqué */}
@@ -58,6 +59,7 @@ function Slideshow({ pictures, picturesLength }) {
                         <img
                             src={arrowNext}
                             alt='Flèche droite'
+                            className='arrow-right'
                         />
                     </button>
                 </div>
