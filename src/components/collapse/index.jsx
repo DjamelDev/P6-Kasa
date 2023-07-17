@@ -1,6 +1,6 @@
 import arrow from '../../assets/images/arrow.png'
 import { useState } from "react"
-import styles from './style.module.scss'
+import './style.scss'
 
 function Collapse({collapseTitle , collapseDescription}){
 
@@ -15,23 +15,23 @@ function Collapse({collapseTitle , collapseDescription}){
     }
 
     return(
-        <div className={styles.collapse_container}>
+        <div className="collapse-container">
             {/* "handleClick" est définit comme gestionnaire d'événement pour le clic sur cet élément. */}
-            <div  onClick={handleClick} 
+            <div onClick={handleClick} 
             /* La classe CSS appliquée à cet élément de titre dépend de la valeur actuelle de "isOpen". 
             Si "isOpen" est vrai, la classe "styles.collapse_title_open" est utilisée, sinon la classe "styles.collapse_title_closed" est utilisée. Cela permet de modifier l'apparence du titre en fonction de l'état du collapse. */
-            className={isOpen ?`${styles.collapse_title_open}`:`${styles.collapse_title_closed}` }>
+            className={isOpen ?`collapse_title_open`:`collapse_title_closed` }>
                 {collapseTitle}
                 {/* L'élément <img>  affiche une flèche vers le haut ou vers le bas. 
                 La classe CSS appliquée à l'image dépend également de la valeur de "isOpen". */}
-                <img  src = {arrow} className={isOpen ?`${styles.arrow_up}`:`${styles.arrow_down}`}
+                <img  src = {arrow} className={isOpen ?`arrow_up`:`arrow_down`}
                 alt='fleche pour déployer le contenu' title='déployer'/>
             </div>
             {/* Cela signifie que si "isOpen" est vrai, le code à l'intérieur des parenthèses sera rendu. 
             Dans ce cas, il s'agit d'un élément <div> supplémentaire qui représente la description du collapse. 
             La classe CSS "styles.collapse_description" est appliquée à cet élément. */}
             {isOpen && (
-                <div className={styles.collapse_description}>
+                <div className='collapse_description'>
                     <div>{collapseDescription}</div>
                 </div>
             )}
