@@ -18,10 +18,9 @@ function Router() {
                 <Route path="/fiche-logement/:id" element={<FicheLogement />} />{/* Route associé au composant FicheLogement et permet d'utiliser des URLs dynamiques où id peut être passé en tant que paramètre au composant */}
                 <Route path="/a-propos" element={<About />} />{/* Route pour la page "À propos" */}
                 <Route path='*' element={<Error />} />{/* Route  associé au composant Erreur et sert de route de secours pour toutes les autres URLs inconnues */}
-
             </Routes>
            <Footer></Footer>{/* Affichage du composant Footer en bas de la page et apparaît sur chaque page */}
-            </BrowserRouter>
+           </BrowserRouter>
         </div>
     )
 }
