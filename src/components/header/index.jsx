@@ -11,8 +11,8 @@ function Header() {
         <header className='header'>
             <Link to="/"><img src={logo} className='logo' alt='Logo Kasa' /></Link>
             <nav className='nav-bar'>
-                <NavLink to="/" >Accueil</NavLink>
-                <NavLink to="/a-propos">A propos</NavLink>
+                <NavLink to="/" className={({ isActive }) => isActive ? "active" : undefined}>Accueil</NavLink>
+                <NavLink to="/a-propos" className={({ isActive }) => isActive ? "active" : undefined}>A propos</NavLink>
             </nav>
         </header>
     )

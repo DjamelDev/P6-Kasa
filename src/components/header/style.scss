@@ -17,6 +17,9 @@ $color_1: #FF6060;
 		text-decoration: none;
 		color: $color_1;
 	}
+	a.active{ 
+		text-decoration: underline;
+	}
 }
 
 // VERSION RESPONSIVE
