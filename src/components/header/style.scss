@@ -2,7 +2,6 @@ $color_1: #FF6060;
 
 .header {
 	padding: 40px 5%;
-	max-width: 1400px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -18,8 +17,8 @@ $color_1: #FF6060;
 		color: $color_1;
 	}
 	a.active{ 
-		text-decoration: underline;
-	}
+    text-decoration: underline;
+}
 }
 
 // VERSION RESPONSIVE
