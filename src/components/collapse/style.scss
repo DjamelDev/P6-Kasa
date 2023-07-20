@@ -69,6 +69,11 @@ $color_2: rgba(255, 96, 96, 1);
 }
 
 @media (max-width :768px) {
+
+	.collapse-container {
+		margin-bottom: 20px;
+	}
+
 	.collapse_description {
 		padding-top: 20px;
 		margin-top: 10px;

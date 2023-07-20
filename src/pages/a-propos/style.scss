@@ -3,3 +3,19 @@
     margin-right: 10%;
     margin-left: 10%;
 }
+
+.title-about-collapse {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+@media (max-width :768px) {
+	.collapse {
+		margin-right: 0;
+        margin-left: 0;
+	}
+
+    .title-about-collapse {
+        font-size: 13px;
+    }
+}
